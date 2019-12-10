@@ -5,9 +5,14 @@
   <title>Basketball Team</title>
  </head>
  <body>
- 
-
-
+    <% v = params %>
+    <p>Team Name: <%= v[:name] %></p>
+    <p>Coach: <%= v["coach".to_sym] %></p>
+    <p>Point Guard: <%= v["pg".to_sym] %></p>
+    <p>Shooting Guard: <%= v["sg".to_sym] %></p>
+    <p>Small Forward: <%= v["sf".to_sym] %></p>
+    <p>Power Forward: <%= v["pf".to_sym] %></p>
+    <p>Center: <%= v["c".to_sym] %></p>
  </body>
 </html>
 
